@@ -1,0 +1,1521 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{cancel}
+\usepackage{fancybox}
+\usepackage{graphicx}
+\begin{document}
+
+\begin{figure}
+\includegraphics[width=5cm, height=1.60cm, width=0.5\linewidth]{espe.png}
+\end{figure}
+
+\begin{center}
+
+\vspace{2cm}
+.
+\vspace{2cm}
+
+Universidad de las fuerzas armadas "ESPE"
+
+\vspace{7cm}
+\end{center}
+\raggedright{Docente: Ing Alejandro Yerovi}
+
+\vspace{0.5cm}
+
+\raggedright{Estudiante: Esteban Cáceres}
+
+\vspace{5.5cm}
+
+Quito 23 de abril. del 2021
+\newpage
+
+\centering \textbf{Limites - Ejercicios resueltos con l'Hopital
+}
+
+\vspace{0.5cm}
+
+\raggedright \textbf{Regla:}
+
+\vspace{0.2cm}
+
+\raggedright Se puede utilizar cuando aparece forma indeterminada $\frac{0}{0}$ o bien $\frac{\infty}{\infty}$.
+
+\vspace{0.5cm}
+
+\textbf{Ejemplos}
+
+\vspace{0.2cm}
+
+
+\textbf{1)}
+
+\[
+\lim_{x \to 2} \frac{x^4 -16}{x^3 - 8} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 2.
+
+\[
+= \lim_{x \to 2} \frac{2^4 -16}{2^3 - 8}=  \frac{16 - 16}{8 - 8}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 2} \frac{\dfrac{d}{dx} x^4 -16}{\dfrac{d}{dx} x^3 - 8}
+\]
+
+\[
+= \lim_{x \to 2} \frac{4x^3}{3x^2}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 2 en la nueva expresion
+
+\[
+= \lim_{x \to 2} \frac{(4)(2)^3}{(3)(2)^2}= \frac{\cancel{(4)}(8)}{(3)\cancel{(4)}}= \frac{8}{3}
+\]
+
+
+\newpage
+
+\textbf{2)}
+
+\[
+\lim_{x \to 2} \frac{x^5 - 5x^2 - 12}{x^{10} - 500x - 24} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 2.
+
+\[
+= \lim_{x \to 2} \frac{(2)^5 - (5)(2)^2 - 12}{(2)^{10} - 500(2) - 24}= \frac{32 - 20 - 12}{1024 - 1000 -24}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador
+
+\[
+= \lim_{x \to 2} \frac{\dfrac{d}{dx} x^5 - 5x^2 - 12}{\dfrac{d}{dx} x^{10} - 500x - 24}
+\]
+
+\[
+= \lim_{x \to 2} \frac{5x^4 - 10x}{10x^9 - 500}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 2 en la nueva expresion
+
+\[
+= \lim_{x \to 2} \frac{(5)(2)^4 - (10)(2)}{(10)(2)^9 - 500}= \frac{80 - 20}{5120 - 500}= \frac{60}{4620}
+\]
+
+\[
+= \frac{6\cancel{0}}{462\cancel{0}}= \frac{6}{462}= \frac{\cancel{6}}{\cancel{462}}= \frac{3}{231}= \frac{\cancel{3}}{\cancel{231}} = \frac{1}{77}
+\]
+
+\vspace{0.2cm}
+\newpage
+
+\textbf{3)}
+
+\[
+\lim_{x \to 0} \frac{5\sin x}{x + 3x^2} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{5\sin 0}{0 + 3(0)^2}= \frac{(5)(0)}{(3)(0)}= \frac{0}{0}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to } \frac{\dfrac{d}{dx} 5 \sin x}{\dfrac{d}{dx} x+3x^2}
+\]
+
+\[
+= \lim_{x \to 0} \frac{(5)(\cos x)}{1+6x}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 2 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{(5)(\cos 0)}{1+(6)(0)}= \frac{(5)(1)}{1+(0)}= \frac{5}{1}= 5
+\]
+
+
+\newpage
+
+\textbf{4)}
+
+\[
+\lim_{x \to 0} \frac{e^{5x} -1}{\sin 2x} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{e^{(5)(0)} -1}{\sin (2)(0)}=  \frac{e^{(0)} -1}{\sin (0)} =  \frac{(1) -1}{(0)} = \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} e^{5x} -1}{\dfrac{d}{dx} \sin 2x}
+\]
+
+\[
+= \lim_{x \to 0} \frac{5e^{5x}}{(\cos 2x)(2)}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{5e^{(5)(0)}}{(\cos (2)(0))(2)}= \frac{5e^{0}}{(\cos 0)(2)}= \frac{(5)(1)}{(1)(2)}= \frac{5}{2}
+\]
+
+
+\newpage
+
+\textbf{5)}
+
+\[
+\lim_{x \to 0} \frac{\sin(x^2)}{1- \cos (3x)} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{\sin ((0)^2)}{\sin (2)(0)}=  \frac{\sin(0)}{1-\cos(0)} =  \frac{0}{(1)-(1)} = \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to } \frac{\dfrac{d}{dx} \sin ((0)^2)}{\dfrac{d}{dx} \sin (2)(0)}
+\]
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{(\cos (x^2))(2x)}{-(-\sin(3x))(3)}}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{[\cos (0^2)][(2)(0)]}{-[-\sin((3)(0))][3]}= \frac{[\cos (0)][0]}{[\sin(0)][3]}= \frac{(1)(0)}{(0)(3)}= \frac{0}{0}
+\]
+
+
+\textcolor{red}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{(\cos (x^2))(2x)}{-(-\sin(3x))(3)}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{[\cos (0^2)][(2)(0)]}{-[-\sin((3)(0))][3]}= \frac{0}{0}
+\]
+
+
+\newpage
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} (\cos (x^2))(2x)}{\dfrac{d}{dx} -(-\sin(3x))(3)}= \frac{(2x)'(\cos x^2)+(2x)(\cos x^2)'}{(3)'(\sin 3x)+(3)(\sin 3x)'}= \frac{(2)(\cos x^2)+(2x)[(-\sin x^2)(x^2)']}{(0)(\sin 3x)+(3)[(\cos 3x)(3x)']}
+\]
+
+\[
+= \lim_{x \to 0} \frac{(2)(\cos x^2)+(2x)(-\sin x^2)(2x)]}{(0)(\sin 3x)+(3)(\cos 3x)(3)} = \frac{(2)(\cos x^2)+(2x)(-\sin x^2)(2x)}{\cancel{(0)(\sin 3x)}+(9)[(\cos 3x)]}
+\]
+
+\[
+= \lim_{x \to 0} \frac{2[(\cos x^2)+(x)(-\sin x^2)(x)]}{(9)[(\cos 3x)]}= \frac{2[(\cos x^2)-(x^2)(\sin x^2)]}{(9)[(\cos 3x)]}
+\]
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{2[(\cos (0)^2)-(0^2)(\sin (0)^2)]}{(9)[(\cos (3)(0)]}=\frac{2[(\cos (0))-(0)(\sin (0))]}{(9)[(\cos (0)]}= \frac{2[1-0]}{(9)(1)}= \frac{(2)(1)}{(9)(1)}= \frac{2}{9}
+\]
+
+\shadowbox{\textbf{IMPORTANTE: Aveces hay que utilizar la ley de l'Hopital mas de una vez.}}
+
+\vspace{0.2cm}
+\newpage
+
+
+\textbf{6)}
+
+\[
+\lim_{x \to 1} \frac{1-x+\ln x}{1+\cos (\pi x)} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 1.
+
+\[
+= \lim_{x \to 1} \frac{1-(1)+\ln (1)}{1+\cos (\pi (1)}= \frac{1-(1)+ (0)}{1+\cos (\pi)}= \frac{1-(1)}{1+(-1)}= \frac{1-(1)}{1-1}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to } \frac{\dfrac{d}{dx} 1-x+\ln x}{\dfrac{d}{dx} 1+\cos (\pi x)}
+\]
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{-1+\frac{1}{x}}{(-\sin(\pi x))(\pi)}}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 1 en la nueva expresion
+
+\[
+= \lim_{x \to 1} \frac{-1+ \frac{1}{1}}{[-\sin(\pi) (1)](\pi)} = \frac{-1+(1)}{[-\sin \pi] (\pi)} = \frac{-1+(1)}{(\pi)(0)}= \frac{0}{0}
+\]
+
+
+
+\textcolor{red}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{-1+\frac{1}{x}}{(-\sin(\pi x))(\pi)}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 1.
+
+\[
+= \lim_{x \to 1} \frac{-1+ \frac{1}{1}}{[-\sin(\pi) (1)](\pi)} = \frac{0}{0}
+\]
+
+
+\newpage
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 1} \frac{\dfrac{d}{dx} -1+\frac{1}{x}}{\dfrac{d}{dx} ( \pi)(-\sin(\pi x))}=  \frac{\dfrac{d}{dx} -1+ x^{-1}}{\dfrac{d}{dx} (- \pi)(\sin(\pi x))}= \frac{(0)+ (-1)x^{-1-1}}{(- \pi)'(\sin(\pi x))+ (- \pi)(\sin(\pi x))'}
+\]
+
+\[
+= \lim_{x \to 1} \frac{-1x^{-2}}{(0)(\sin(\pi x))- ( \pi)[\cos (\pi x))(\pi x)']} = \frac{-1x^{-2}}{(0)(\sin(\pi x))- ( \pi)[\cos (\pi x)](\pi)}
+\]
+
+\[
+= \lim_{x \to 1} \frac{-1x^{-2}}{\cancel{(0)(\sin(\pi x))}- ( \pi)[\cos (\pi x)](\pi)}= \frac{-1}{- ( \pi)[\cos (\pi x)](\pi)}(\frac{1}{x^2})= \frac{1}{(x^2)( \pi ^2)[\cos (\pi x)]} 
+\]
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 1 en la nueva expresion
+
+\[
+= \lim_{x \to 1} \frac{1}{((1)^2)( \pi ^2)[\cos (\pi (1))]}= \frac{1}{( \pi ^2)[\cos (\pi)]}= \frac{1}{( \pi ^2)(-1)}= - \frac{1}{(\pi ^2)}
+\]
+
+\shadowbox{\textbf{IMPORTANTE: Aveces hay que utilizar la ley de l'Hopital mas de una vez.}}
+
+\vspace{0.2cm}
+\newpage
+
+
+\textbf{7)}
+
+\[
+\lim_{x \to \frac{\pi}{2}} \frac{2x - \pi}{\tan 2x} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = $\frac{\pi}{2}$
+
+\[
+= \lim_{x \to \frac{\pi}{2}} \frac{2(\frac{\pi}{2}) - \pi}{\tan (2)(\frac{\pi}{2})}= \frac{\cancel{(2)}(\frac{\pi}{\cancel{2}}) - \pi}{\tan \cancel{(2)}(\frac{\pi}{\cancel{2}})}= \frac{\pi - \pi}{\tan \pi}= \frac{0}{0}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to \frac{\pi}{2}} \frac{\dfrac{d}{dx} 2x - \pi}{\dfrac{d}{dx} \tan 2x}= \frac{2}{[\sec^2 2x](2x)'}= \frac{2}{[\sec^2 2x](2)}= \frac{\cancel{2}}{[\sec^2 2x](\cancel{2})}= \frac{1}{[\sec^2 2x]}
+\]
+
+
+\textbf{Recordar:}
+
+\begin{center}{\fbox{$\frac{1}{\sec \theta}= \cos \theta$}}
+\end{center}
+
+\[
+= \lim_{x \to \frac{\pi}{2}} (\cos) ^2 (2x)
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = $\frac{\pi}{2}$ en la nueva expresion.
+
+\[
+= \lim_{x \to \frac{\pi}{2}} \cos^2 (2)(\frac{\pi}{2})= \cos^2 (\cancel{2})(\frac{\pi)}{\cancel{2}}) = \cos ^2 \pi = (-1)^{2} = 1
+\]
+
+
+\newpage
+
+\textbf{8)}
+
+\[
+\lim_{x \to 1} \frac{1-x^2}{\sin \pi x} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 1.
+
+\[
+= \lim_{x \to 1} \frac{1-(1)^2}{\sin (\pi) (1)} = \frac{1-(1)}{\sin \pi} = \frac{0}{0}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 1 } \frac{\dfrac{d}{dx} 1-x^2}{\dfrac{d}{dx} \sin \pi x}
+\]
+
+\[
+= \lim_{x \to 1} \frac{-2x}{[\cos (\pi)(x)](\pi x)'}
+\]
+
+\[
+= \lim_{x \to 1} \frac{-2x}{[\cos (\pi x)](\pi)}
+\]
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 1 en la nueva expresion
+
+\[
+= \lim_{x \to 1} \frac{-2(1)}{[\cos (\pi (1))](\pi)}= \frac{-2}{[\cos (\pi)](\pi)}= \frac{-2}{[-1](\pi)}= \frac{-2}{-\pi}= \frac{2}{\pi}
+\]
+
+
+\newpage
+
+\textbf{9)}
+
+\[
+\lim_{n \to \infty} (n) \sin \frac{\pi}{n} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de $n = \infty $.
+
+\[
+= \lim_{x \to \infty} (\infty) \sin \frac{\pi}{\infty} = (\infty) \sin \cancel{\frac{\pi}{\infty}} = (\infty) \sin (0)= (\infty)(0)= 0
+\]
+
+\textbf{Nota}
+Se hallo una indeterminacion
+
+\vspace{0.5cm}
+
+\fbox{\parbox{150mm}{La expresion original se la transformara en una radicacion, para ello se reemplazara la igualdad n = $ \frac{1}{n^-1}$}}
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+Se reestructurará la exprecion general, en una radicacion
+
+\[
+= \lim_{n \to \infty} \frac{1}{n^-1} \sin (\frac{\pi}{n})= \frac{\sin (\frac{\pi}{n})}{n^-1}= \frac{\sin (\pi)(\frac{1}{n})}{\frac{1}{n}}
+\]
+
+\fbox{\parbox{150mm}{\textbf{Cambio de variable}
+\vspace{0.2cm}
+
+$\frac{1}{n} = x $, si $\lim{n \to \infty}$ , $\lim{x \to 0}$ }}
+
+\vspace{0.5cm}
+
+\shadowbox{\textcolor{red}{\textbf{Reconstruccion del limite}}}
+
+\[
+= \lim_{n \to \infty} \frac{\sin (\pi)(\frac{1}{n})}{\frac{1}{n}}= \textcolor{red}{\lim_{x \to 0} \frac{\sin (\pi)(x)}{x}}
+\]
+
+
+
+\newpage
+
+\textbf{3)}
+
+\[
+\textcolor{red}{\lim_{x \to 0} \frac{\sin (\pi)(x)}{x}} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{\sin (\pi)(0)}{0}= \frac{\sin (0)}{0}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} \sin (\pi)(x)}{\dfrac{d}{dx} x}= \frac{[\cos (\pi) (x)](\pi}{1}
+\]
+
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{[\cos (\pi) (0)](\pi x)'}{1}= \frac{[\cos(0)](\pi)}{1} = \frac{(1)(\pi)}{1}= \pi
+\]
+
+
+\newpage
+
+
+
+\textbf{10)}
+
+\[
+\lim_{x \to 0} \frac{\ln (1 + 6x)}{x} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{\ln (1 + 6(0))}{0}= \frac{\ln (1)}{0}=  \frac{0}{0}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} \ln (1+6x)}{\dfrac{d}{dx} x}
+\]
+
+\[
+= \lim_{x \to 0} \frac{\frac{(1 + 6x)'}{(1 + 6x)}}{1}= \frac{(6)}{(1 + 6x)}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{(6)}{(1 + 6(0))}= \frac{(6)}{(1 + (0))}= \frac{(6)}{(1)}= 6
+\]
+
+
+\newpage
+
+
+\textbf{11)}
+
+\[
+\lim_{x \to \frac{\pi}{2}} (\sin ^2 x)^{\tan x} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = $\frac{\pi}{2}$.
+
+\[
+= \lim_{x \to \frac{\pi}{2}} (\sin ^2 (\frac{\pi}{2}))^{\tan (\frac{\pi}{2})} = ((1)^2)^{\tan(\frac{\pi}{2})}= (1)^\infty
+\]
+
+\begin{center}
+\fbox{\parbox{55mm}{$\tan (\frac{\pi}{2})$ tiende a $\infty$ y $- \infty$}}
+\end{center}
+
+\textbf{Nota: Definimos al limite como (L) para de alguna manera bajar el exponente($\tan x$), se usaran logaritmos }
+
+\[
+L = \lim_{x \to  \frac{\pi}{2}} (\sin ^2 x)^{\tan x}= e^{\textcolor{red}{ln L}}
+\]
+
+\fbox{\textcolor{red}{\textbf{Se calculara el ($\ln L$)}}}
+
+\[
+\textcolor{red}{\ln L} = \lim_{x \to  \frac{\pi}{2}} \textcolor{red}{\ln}(\sin ^{(\textcolor{green}{2})} x)^{\textcolor{blue}{\tan x}}=(\textcolor{blue}{\tan x}) \textcolor{red}{\ln}(\sin ^{(\textcolor{green}{2})} x)= (\textcolor{blue}{\tan x}) \textcolor{red}{\ln}(\sin x)^{(\textcolor{green}{2})} = (\textcolor{green}{2})(\textcolor{blue}{\tan x}) \textcolor{red}{\ln}(\sin x)
+\]
+
+
+\textbf{Reestructuracion del limite, se expresara como una division, gracias a las identidades trigonometricas}
+
+\begin{center}
+\fbox{\parbox{25mm}{$\tan x = \frac{1}{\cot x}$}}
+\end{center}
+
+\[
+\textcolor{red}{\ln L} = \lim_{x \to  \frac{\pi}{2}} (\textcolor{green}{2})(\textcolor{blue}{\tan x}) \textcolor{red}{\ln}(\sin x)= (\textcolor{green}{2})(\textcolor{blue}{\frac{1}{\cot x}}) \textcolor{red}{\ln}(\sin x)
+\]
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2})\lim_{x \to  \frac{\pi}{2}} (\textcolor{blue}{\frac{1}{\cot x}}) \textcolor{red}{\ln}(\sin x)= \frac{\textcolor{red}{\ln}(\sin x)}{\textcolor{blue}{\cot x}}
+\]
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2})\lim_{x \to  \frac{\pi}{2}}\frac{\textcolor{red}{\ln}(\sin x)}{\textcolor{blue}{\cot x}}
+\]
+
+
+
+\fbox{\textbf{Evaluar la nueva expresion}}
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2})\lim_{x \to  \frac{\pi}{2}}\frac{\textcolor{red}{\ln}(\sin x)}{\textcolor{blue}{\cot x}} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de $x= \frac{\pi}{2}$.
+
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2})\lim_{x \to  \frac{\pi}{2}}\frac{\textcolor{red}{\ln}(\sin (\frac{\pi}{2}))}{\textcolor{blue}{\cot (\frac{\pi}{2})}}
+\]
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2})\lim_{x \to  \frac{\pi}{2}}\frac{\textcolor{red}{\ln}(1)}{0}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2}) \lim_{x \to \frac{\pi}{2}} \frac{\dfrac{d}{dx} \ln (\sin x)}{\dfrac{d}{dx} \cot x}= \frac{\frac{(\sin x)'}{(\sin x)}}{-\csc ^2 (x)}= \frac{\frac{\cos x}{\sin x}}{-\csc^2 (x)}
+\]
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{2}) \lim_{x \to \frac{\pi}{2}} \frac{\cot x}{-\csc^2 (x)} = (\textcolor{green}{-2}) \lim_{x \to \frac{\pi}{2}} \frac{\cot x}{\csc^2 (x)}
+\]
+	
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar $x=\frac{\pi}{2}$ en la nueva expresion
+
+\[
+\textcolor{red}{\ln L} = (\textcolor{green}{-2})  \frac{\cot (\frac{\pi}{2})}{\csc^2 (\frac{\pi}{2})} =  (\textcolor{green}{-2})\frac{0}{1^2}= 0
+\]
+
+\begin{center}
+\fbox{\parbox{120mm}{Como se logro hallar $\textcolor{red}{\ln L}$, se reemplazara en la definicion del limite $L = e^{\textcolor{red}{\ln L}}$ }}
+\end{center}
+
+
+\[
+L = e^{\textcolor{red}{0}}= 1
+\]
+
+\newpage
+
+
+\textbf{12)}
+
+\[
+\lim_{x \to 0} \frac{\arctan 2x}{\arctan 3x} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{\arctan 2(0)}{\arctan 3(0)}= \frac{\arctan 0}{\arctan 0} = \frac{0}{0}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to } \frac{\dfrac{d}{dx} \arctan 2x}{\dfrac{d}{dx} \arctan 3x}
+\]
+
+\fbox{\parbox{140mm}{Recordar: $\frac{d}{dx} \arctan v = \frac{v'}{1 + v^2}$}}
+
+\[
+= \lim_{x \to 0} \frac{\frac{(2x)'}{1 + (2x)^2}}{\frac{(3x)'}{1 + (3x)^2}}= \frac{\frac{(2)}{1 + (4x^2)}}{\frac{(3)}{1 + (9x^2)}}=\frac{(2)[1 + (9x^2)]}{[1 + (4x^2)](3)} 
+\]
+
+\[
+= \lim_{x \to 0} \frac{(2)[1 + (9x^2)]}{(3)[1 + (4x^2)]} 
+\]
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{(2)[1 + 9(0)^2]}{(3)[1 + 4(0)^2]} = \frac{(2)[1 + 0]}{(3)[1 + 0]}= \frac{(2)[1]}{(3)[1]} = \frac{2}{3}
+\]
+
+
+\newpage
+
+
+\textbf{13)}
+
+\[
+\lim_{x \to \infty} \frac{\ln x}{\sqrt{x}} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de $x=\infty$.
+
+\[
+= \lim_{x \to \infty} \frac{\ln (\infty)}{\sqrt{\infty}}= \frac{\infty}{\infty}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to \infty} \frac{\dfrac{d}{dx} \ln x}{\dfrac{d}{dx} \sqrt{x}}= \frac{\dfrac{d}{dx} \ln x}{\dfrac{d}{dx} x^{\frac{1}{2}}}= \frac{\frac{1}{x}}{\frac{1}{2}x^{\frac{1}{2}-1}}= \frac{\frac{1}{x}}{\frac{1}{2}x^{-\frac{1}{2}}}= \frac{\frac{1}{x}}{(\frac{1}{(2)} \frac{1}{(x^{\frac{1}{2}})})}
+\]
+
+\[
+= \lim_{x \to \infty}  \frac{\frac{1}{x}}{(\frac{1}{(2)} \frac{1}{(\sqrt{x})})}= \frac{\frac{1}{x}}{(\frac{1}{(2)((\sqrt{x}))})}= \frac{(2) (\sqrt{x})}{x}=  \frac{(2) (\sqrt{x})}{(\sqrt{x})(\sqrt{x})}= \frac{(2) (\cancel{\sqrt{x}})}{(\sqrt{x})(\cancel{\sqrt{x}})}= \frac{2}{\sqrt{x}}
+\]
+
+\vspace{0.2cm}
+
+\begin{center}
+\fbox{\parbox{50mm}{Recordar: $\lim_{x \to \infty} \frac{A}{x^n}= 0$.}}
+\end{center}
+
+\[
+= \lim_{x \to \infty} \frac{2}{\sqrt{x}} = 0
+\]
+
+\newpage
+
+
+
+\textbf{14)}
+
+\[
+\lim_{x \to \infty} \frac{\ln(\ln x)}{(x)(\ln x)} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de $x=\infty$.
+
+\[
+= \lim_{x \to \infty} \frac{\ln(\ln (\infty)}{(\infty)(\ln (\infty)}= \frac{\infty}{\infty}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to \infty} \frac{\dfrac{d}{dx} \ln(\ln x)}{\dfrac{d}{dx} (x)(\ln x)}= \frac{\frac{(\ln x)'}{(\ln x)}}{(x)'(\ln x)+(x)(\ln x)'}= \frac{\frac{(\frac{1}{x})}{(\ln x)}}{(1)(\ln x)+(x)(\frac{1}{x})}
+\]
+
+\[
+= \lim_{x \to \infty} \frac{\frac{(1)}{(x)(\ln x)}}{(1)(\ln x)+(\cancel{x})(\frac{1}{\cancel{x}})}= \frac{1}{[(x)(\ln x)][(\ln x +1]}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar $x = \infty$ en la nueva expresion
+
+\[
+= \lim_{x \to \infty} \frac{1}{[(\infty)(\ln (\infty)][(\ln (\infty) +1]} = \frac{1}{\infty}
+\]
+
+\vspace{0.5cm}
+\fbox{\textbf{Recordar: $ \lim_{x \to \infty} \frac{1}{\infty} = 0 $}}
+\vspace{0.2cm}
+\[
+= \lim_{x \to \infty} \frac{1}{\infty} = 0
+\]
+
+\newpage
+
+\textbf{15)}
+
+\[
+\lim_{x \to 0} \frac{e^x -x - \cos x}{\sin^{2} x} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{e^0 -0 - \cos 0}{\sin^{2} 0}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} e^x -x - \cos x}{\dfrac{d}{dx} \sin^{2} x}= \frac{\dfrac{d}{dx} e^x -x - \cos x}{\dfrac{d}{dx} (\sin x)^2} = \frac{e^x -1 - (-\sin x)}{(2)(\sin x)(\sin x)'}= \textcolor{red}{\frac{e^x -1 + (\sin x)}{(2)(\sin x)(\cos x)}}
+\]
+
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{e^0 -1 + (\sin 0)}{(2)(\sin 0)(\cos 0)}= \frac{1-1+0}{(2)(0)(1)} = \frac{0}{0} 
+\]
+
+
+
+\textcolor{red}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{e^x -1 + (\sin x)}{(2)(\sin x)(\cos x)}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{e^0 -1 + (\sin 0)}{(2)(\sin 0)(\cos 0)}= \frac{1-1+0}{(2)(0)(1)} = \frac{0}{0} 
+\]
+
+
+\newpage
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} e^x -1 + (\sin x)}{\dfrac{d}{dx} (2)(\sin x)(\cos x)}=  \frac{e^x -0 + (\cos x)}{(2 \sin x)'(\cos x)+ (2 \sin x)(\cos x)'}
+\]
+
+\[
+= \lim_{x \to 0} \frac{e^x + (\cos x)}{(2 \cos x)(\cos x)+ (2 \sin x)(-\sin x)} = \frac{e^x + (\cos x)}{(2 \cos x)(\cos x)- (2 \sin x)(\sin x)} 
+\]
+
+\[
+= \lim_{x \to 0} \frac{e^x + (\cos x)}{(2)[(\cos x)^2- (\sin x)^2]}
+\]
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{e^0 + (\cos 0)}{(2)[(\cos 0)^2- (\sin 0)^2]}= \frac{1+1}{2[(1)^2+(0)^2]}= \frac{2}{2}= 1
+\]
+
+\shadowbox{\textbf{IMPORTANTE: Aveces hay que utilizar la ley de l'Hopital mas de una vez.}}
+
+\vspace{0.2cm}
+\newpage
+
+
+\textbf{16)}
+
+\[
+\lim_{x \to 0} \frac{x- (1+x)\ln(1+x)}{x^3 + x^2} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{0- (1+0)\ln(1+0)}{0^3 + 0^2}= \frac{(1)\ln(1)}{0 + 0} = \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} x- (1+x)\ln(1+x)}{\dfrac{d}{dx} {x^3 + x^2}} =  \frac{ 1 - [(1+x)'(\ln(1+x))+(1+x)(\ln(1+x))']}{3x^{3-1} + 2x^{2-1}}
+\]
+
+
+\[
+= \lim_{x \to 0} \frac{1 - [(1)(\ln(1+x))+(1+x)(\frac{(1+x)'}{(1+x)})]}{3x^{2} + 2x}= \frac{1 - [(1)(\ln(1+x))+(\cancel{1+x})(\frac{(1)}{(\cancel{1+x})})]}{3x^{2} + 2x}
+\]
+
+\[
+= \lim_{x \to 0} \frac{1 - [(\ln(1+x))+ (1)]}{3x^{2} + 2x}= \frac{1 -(\ln(1+x))- (1)}{3x^{2} + 2x}= \frac{\cancel{1} - (\ln(1+x)) \cancel{-1}}{3x^{2} + 2x}
+\]
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{- \ln(1+x)}{3x^{2} + 2x}}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+={\lim_{x \to 0} \frac{- \ln(1+0)}{3(0)^{2} + 2(0)}} = \frac{- (\ln 1)}{0+0}= \frac{0}{0}
+\]
+
+
+
+\textcolor{red}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+= \textcolor{red}{\lim_{x \to 0} \frac{- \ln(1+x)}{3x^{2} + 2x}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+={\lim_{x \to 0} \frac{- \ln(1+0)}{3(0)^{2} + 2(0)}} = \frac{- (\ln 1)}{0+0}= \frac{0}{0} 
+\]
+
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} - \ln(1+x)}{\dfrac{d}{dx} 3x^{2} + 2x}=  -\frac{\frac{(1+x)'}{(1+x)}}{6x +2}= -\frac{\frac{(1)}{(1+x)}}{6x +2}= - \frac{1}{(1+x)(6x+2)}
+\]
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} - \frac{1}{(1+0)(6(0)+2)}= - \frac{1}{(1)(0+2)}= -\frac{1}{(1)(2)}= - \frac{1}{2}
+\]
+
+\shadowbox{\textbf{IMPORTANTE: Aveces hay que utilizar la ley de l'Hopital mas de una vez.}}
+
+\vspace{0.2cm}
+\newpage
+
+
+
+\textbf{17)}
+
+\[
+\lim_{x \to 1} \frac{(e^{x}- e^{-x})^2}{x^2} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{(e^{0}- e^{0})^2}{0^2}= \frac{(1-1)^2}{0}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} (e^{x}- e^{-x})^2}{\dfrac{d}{dx} x^2}= \frac{2(e^{x}- e^{-x})(e^{x}- e^{-x}(-1))}{2x}= \frac{2(e^{x}- e^{-x})(e^{x}+ e^{-x})}{2x}
+\]
+
+\[
+= \lim_{x \to 0} \frac{\cancel{2}(e^{x}- e^{-x})(e^{x}+ e^{-x})}{\cancel{2}x}= \frac{(e^{x}- e^{-x})(e^{x}+ e^{-x})}{x} = \frac{e^{2x}+ e^{0}-e^{0}-e^{-2x}}{x}
+\]
+
+\[
+= \lim_{x \to 0} \frac{e^{2x}+ 1-1-e^{-2x}}{x}= \frac{e^{2x}+ \cancel{1-1}-e^{-2x}}{x} = \frac{e^{2x}-e^{-2x}}{x}
+\]
+
+\[
+\textcolor{red}{= \lim_{x \to 0} \frac{e^{2x}-e^{-2x}}{x}}
+\]
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 1} \frac{e^{2(0)}-e^{-2(0)}}{(0)}= \frac{e^{0}-e^{0}}{0}= \frac{1-1}{0}= \frac{0}{0}
+\]
+
+
+\newpage
+
+\textcolor{red}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+\textcolor{red}{= \lim_{x \to 0} \frac{e^{2x}-e^{-2x}}{x}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 1.
+
+\[
+= \lim_{x \to 1} \frac{e^{2(0)}-e^{-2(0)}}{(0)}= \frac{e^{0}-e^{0}}{0}= \frac{1-1}{0}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} e^{2x}-e^{-2x}}{\dfrac{d}{dx} x}=  \frac{e^{2x}(2x)'-e^{-2x}(-2x)'}{1}= e^{2x}(2)-e^{-2x}(-2)= 2[e^{x}+e^{-2x}]
+\]
+
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 1 en la nueva expresion
+
+\[
+= \lim_{x \to 0} 2[e^{0}+e^{-2(0)}]= 2[e^{0}+e^{0}]= 2(1+1)= 2(2)= 4
+\]
+
+\shadowbox{\textbf{IMPORTANTE: Aveces hay que utilizar la ley de l'Hopital mas de una vez.}}
+
+\vspace{0.2cm}
+\newpage
+
+
+\textbf{18)}
+
+\[
+\lim_{x \to 0} \frac{2x+2}{\ln x} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 1.
+
+\[
+= \lim_{x \to 1} \frac{2(1)+2}{\ln (1)}= \frac{(2)-2}{0}= \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 1} \frac{\dfrac{d}{dx} 2x+2}{\dfrac{d}{dx} \ln x}= \frac{2}{\frac{1}{x}}= 2x
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 1 en la nueva expresion
+
+\[
+= \lim_{x \to 1} 2x= 2(1) = 2
+\]
+
+
+\textbf{19)}
+
+\[
+\lim_{t \to 3} \frac{t^3 - 27}{t-3} 
+\]
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de t = 3.
+
+\[
+= \lim_{t \to 3} \frac{(3)^3 - 27}{3-3}= \frac{27-27}{3-3}= \frac{0}{0}
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{t \to 3} \frac{\dfrac{d}{dt} t^3 - 27}{\dfrac{d}{dx} t-3}= \frac{3t^2}{1}= 3t^2
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar t = 3 en la nueva expresion
+
+\[
+= \lim_{t \to 3} 3t^2= 3(3)^2= 3(9)= 27
+\]
+
+\newpage
+
+
+\textbf{20)}
+
+\[
+\lim_{x \to 0} \frac{6+6x+3x^{2}-6e^{x}}{x- \sin x} 
+\]
+
+
+\vspace{0.2cm}
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{6+6(0)+3(0)^{2}-6e^{(0)}}{(0)- \sin (0)}= \frac{6-0+0-6(1)}{(0)-(0)}=\frac{6\cancel{-0+0}-6(1)}{(0)-(0)} =\frac{6-6}{0}=  \frac{0}{0}
+\]
+
+\vspace{0.2cm}
+
+\textbf{Nota: Se observa que hay una indeterminacion y se puede utilizar la ley de l'Hopital }
+
+\vspace{0.5cm}
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} 6+6x+3x^{2}-6e^{x}}{\dfrac{d}{dx} x- \sin x}= \frac{(0)+(6)+6x+6e^x}{1-\cos x}
+\]
+
+\[
+\textcolor{red}{= \lim_{x \to 0} \frac{(6)+6x+6e^x}{1-\cos x}}
+\]
+
+\vspace{0.2cm}
+
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{(6)+6(0)+6e^0}{1-\cos (0)}= \frac{6-6(1)}{1-1}= \frac{0}{0}
+\]
+
+\textcolor{red}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+\textcolor{red}{= \lim_{x \to 0} \frac{(6)+6x+6e^x}{1-\cos x}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 1.
+
+\[
+= \lim_{x \to 0} \frac{(6)+6(0)+6e^0}{1-\cos (0)}= \frac{6-6(1)}{1-1}= \frac{0}{0}
+\]
+
+\newpage
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} (6)+6x+6e^x}{\dfrac{d}{dx} 1-\cos x}=  \frac{6-6e^x}{\sin x}
+\]
+
+\[
+\textcolor{blue}{= \lim_{x \to 0} \frac{6-6e^x}{\sin x}}
+\]
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{6-6e^0}{\sin 0}= \frac{6-(6)(1)}{0}= \frac{0}{0}
+\]
+
+\textcolor{blue}{Nota: Se llego a una nueva indeterminacion, se utilizara nuevamente la regla de l'Hopital, en la nueva expresion.}
+
+\vspace{0.2cm}
+
+\textbf{Nueva expresion}
+
+\[
+\textcolor{blue}{= \lim_{x \to 0} \frac{6-6e^x}{\sin x}}
+\]
+
+
+\textbf{Paso 1:}
+\vspace{0.2cm}
+Verificar si se llega a la forma indeterminada, reemplazando el valor de x = 0.
+
+\[
+= \lim_{x \to 0} \frac{6-6e^0}{\sin 0}= \frac{6-(6)(1)}{0}= \frac{0}{0}
+\]
+
+
+\textbf{Paso 2:}
+\vspace{0.2cm}
+Derivar numerador y denominador.
+
+\[
+= \lim_{x \to 0} \frac{\dfrac{d}{dx} 6-6e^x}{\dfrac{d}{dx} \sin x}=  \frac{-6e^x}{\cos x}
+\]
+
+
+\textbf{Paso 3:}
+\vspace{0.2cm}
+Reemplazar x = 0 en la nueva expresion
+
+\[
+= \lim_{x \to 0} \frac{-6e^0}{\cos 0}=\frac{-6(1)}{1}= -6
+\]
+
+
+\shadowbox{\textbf{IMPORTANTE: Aveces hay que utilizar la ley de l'Hopital mas de una vez.}}
+
+\vspace{0.2cm}
+\newpage
+
+\vspace{0.2cm}
+\end{document}
